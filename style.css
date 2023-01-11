@@ -75,16 +75,15 @@ img{
     top: 8rem;
     left: 33rem;
 }
-.all{
-    width: 50vw;
+.all {
+    width: 43rem;
     margin: auto;
     position: relative;
     margin-top: 3rem;
 }
-.area-dif{
+.area-dif {
     margin: auto;
-    width: 20vw;
-    
+    width: 18rem;
 }
 .attribution {
     font-size: 11px;
@@ -93,4 +92,49 @@ img{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:978px){
+    .all {
+        width: 18rem;
+        margin: auto;
+        margin-top: 3rem;
+        position: static;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    #border-ciano {
+        position: inherit;
+        left: inherit;
+        bottom:inherit ;
+    }
+    #border-blue{
+        position:static;
+        top: inherit;
+        left: inherit;
+    }
+    article {
+        width: 20rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+@media(max-width:375px){
+    #h1-ligth {
+        font-size: 1.2rem;
+    }
+    #h1-bold {
+        font-size: 1.2rem;
+    }
+    article p {
+        font-size: 0.8rem;
+    }
+    article {
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
